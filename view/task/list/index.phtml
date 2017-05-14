@@ -1,0 +1,12 @@
+<div class="task-index">
+    <h1>Задачи</h1>
+    <?php foreach ($this->tasks as $task) : ?>
+        <article>
+            <h2 id="post<?= $task->getId() ?>"><?= $task->getTitle() ?></h2>
+
+            <p>
+                <?= $task->getDescription() ?>
+            </p>
+        </article>
+    <?php endforeach; ?>
+</div>
